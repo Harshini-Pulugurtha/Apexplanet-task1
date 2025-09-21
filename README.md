@@ -25,8 +25,10 @@ CSS3 (animations, hover effects, responsive styling)
 JavaScript (interactive info display)
 
 📂 Project Structure
-├── index.html        # Main project file
+├── index.html    # Main project file
+
 ├── background.jpg    # Space background (local or online)
+
 └── README.md         # Documentation
 
 📸 Demo Screenshot
