@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Space Planets</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: black url('background.jpg') repeat; /* Space background with stars */
+            color: white;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .solar-system {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 40px;
+            gap: 20px;
+        }
+
+        .planet {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+            border: 2px solid white;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .planet:hover {
+            transform: scale(1.2);
+        }
+
+        .info-box {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="alert('Hello! This is a simple alert message.')">
+    Click Me
+</button>
+
+
+    <h1>Welcome to the Space Explorer!</h1>
+
+    <div class="solar-system">
+        <div class="planet" style="background-image: url('https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/06/messenger_s_iridescent_mercury/15445906-1-eng-GB/Messenger_s_iridescent_Mercury.jpg');" onclick="showInfo('Mercury', 'Mercury is the closest planet to the Sun.', 'https://en.wikipedia.org/wiki/Mercury_(planet)')"></div>
+        <div class="planet" style="background-image: url('https://cdn.mos.cms.futurecdn.net/v2/t:0,l:502,cw:1290,ch:1290,q:80,w:1290/RifjtkFLBEFgzkZqWEh69P.jpg');" onclick="showInfo('Venus', 'Venus is the second planet from the Sun.', 'https://en.wikipedia.org/wiki/Venus')"></div>
+        <div class="planet" style="background-image: url('https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');" onclick="showInfo('Earth', 'Earth is our home planet.', 'https://en.wikipedia.org/wiki/Earth')"></div>
+        <div class="planet" style="background-image: url('https://t3.ftcdn.net/jpg/02/14/13/14/360_F_214131404_BD1k2AXYMNNfUGemosLGl50jYGAcmCmo.jpg');" onclick="showInfo('Mars', 'Mars is known as the Red Planet.', 'https://en.wikipedia.org/wiki/Mars')"></div>
+        <div class="planet" style="background-image: url('https://cdn.esahubble.org/archives/images/screen/heic2017a.jpg');" onclick="showInfo('Jupiter', 'Jupiter is the largest planet in the Solar System.', 'https://en.wikipedia.org/wiki/Jupiter')"></div>
+        <div class="planet" style="background-image: url('https://static.vecteezy.com/system/resources/previews/033/497/874/non_2x/a-picture-of-the-planet-saturn-taken-from-space-generative-ai-free-photo.jpg');" onclick="showInfo('Saturn', 'Saturn is famous for its rings.', 'https://en.wikipedia.org/wiki/Saturn')"></div>
+        <div class="planet" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0iA3uCyHnKAKWmBrtw-02lQODdxHJ02rGdQ&s');" onclick="showInfo('Uranus', 'Uranus rotates on its side.', 'https://en.wikipedia.org/wiki/Uranus')"></div>
+        <div class="planet" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b9/Neptune_Voyager2_color_calibrated.png');" onclick="showInfo('Neptune', 'Neptune is the farthest planet from the Sun.', 'https://en.wikipedia.org/wiki/Neptune')"></div>
+    </div>
+
+    <div class="info-box" id="info-box">
+        Click a planet to learn more!
+    </div>
+
+    <script>
+        function showInfo(name, description, link) {
+            const infoBox = document.getElementById('info-box');
+            infoBox.innerHTML = `<h2>${name}</h2>\n${description}<br><br>(<a href="${link}" target="_blank">Learn more on Wikipedia</a>)`;
+        }
+    </script>
+
+</body>
+</html>
