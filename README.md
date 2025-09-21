@@ -31,27 +31,24 @@ JavaScript (interactive info display)
 
 📸 Demo Screenshot
 
-![Interactive Space Planets Screenshot](./screenshot.png)
+![Interactive Space Planets Screenshot](./task.png)
 
-
-🎥 Demo Video
-
-Here’s a quick screen recording of the project in action:
-Watch the Demo Video
-
-(If uploading to LinkedIn, use the same video link as required in the task instructions.)
 
 🔗 Live Links
 
 🌐 LinkedIn Video Post
+[Watch Demo Here](https://www.linkedin.com/posts/harshini-pulugurtha_apexplanet-internship-frontend-activity-7375425571947864065-WnMZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEN1RX4BlL_IutP1rHCeyqfXw3vsoeUxF0U)  
+
 
 💻 GitHub Repository
+[My ApexPlanet Task 1 Repo](https://github.com/Harshini-Pulugurtha/Apexplanet-task1)
+
 
 📖 How to Run
 
 Clone the repository:
 
-git clone https://github.com/your-username/apexplanet-task1.git
+git clone https://github.com/Harshini-Pulugurtha/Apexplanet-task1.git
 
 
 Open index.html in any modern browser.
